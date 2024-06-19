@@ -95,7 +95,7 @@ def stop(args):
 def resume(args):
     controller = init(args)
     instance_ids = [id.strip() for id in args.instance_ids.split(',')] if args.instance_ids else None
-    controller.resume(instance_ids)
+    controller.resume()
 
 def packer(args):
     controller = init(args)
